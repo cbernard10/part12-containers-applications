@@ -1,0 +1,30 @@
+services:
+  app:
+    image: bloglist-frontend-dev
+    # ports:
+    #   - "3000:5173"
+    volumes:
+      - ./bloglist-frontend:/usr/src/app
+    environment:
+      - VITE_BACKEND_URI=http://localhost:8080/api/
+
+  server:
+    image: bloglist-backend-dev # Declares which image to use
+    # ports:
+    #   - "3003:3003"
+    volumes:
+      - ./bloglist-backend:/usr/src/app
+    environment:
+      - MONGO_URL=mongodb+srv://admin:admin@cluster0.ug7icwy.mongodb.net/blogsList?retryWrites=true&w=majority
+      - PORT=3003
+      - SECRET=bloglist
+
+  nginx:
+    image: nginx:1.20.1
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
+    container_name: bloglist-nginx
+    depends_on:
+      - app

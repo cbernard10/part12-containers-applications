@@ -1,0 +1,13 @@
+Script démarré sur 2023-12-30 02:59:37+01:00 [TERM="rxvt-unicode-256color" TTY="/dev/pts/19" COLUMNS="155" LINES="94"]
+]0;rth@pndmnm:~/FSO/part12-containers-applications[?2004h[rth@pndmnm part12-containers-applications]$ docker r[K[K[K[K[K[K[K[Ksudo docker run -it ubuntu bash
+[?2004l[sudo] Mot de passe de root : 
+[?2004h]0;root@6d9c70660760: /root@6d9c70660760:/# mkdir /usr/ds  src/app
+[?2004l[?2004h]0;root@6d9c70660760: /root@6d9c70660760:/# touch /usr/src/app/index.js
+[?2004l[?2004h]0;root@6d9c70660760: /root@6d9c70660760:/# [Kls /usr/src/app/
+[?2004lindex.js
+[?2004h]0;root@6d9c70660760: /root@6d9c70660760:/# exit
+[?2004lexit
+]0;rth@pndmnm:~/FSO/part12-containers-applications[?2004h[rth@pndmnm part12-containers-applications]$ exit
+[?2004lexit
+
+Script terminé sur 2023-12-30 03:00:32+01:00 [COMMAND_EXIT_CODE="0"]

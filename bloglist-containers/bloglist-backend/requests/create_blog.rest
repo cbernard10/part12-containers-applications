@@ -1,0 +1,12 @@
+POST http://localhost:3003/api/blogs
+
+content-type: application/json
+{
+    "title": "test blog",
+    "author": "john doe",
+    "url": "www.google.com",
+    "likes": 18
+}
+
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOiI2NTZmM2YzYzBhOTc1MjI2Yjk0MGQzNjgiLCJpYXQiOjE3MDI1ODYyNTcsImV4cCI6MTcwMjU4OTg1N30.v9rgEB1FKxAnAY36ReuB2SiCSKzJioyJyS1T4vJ2Hn0
+
